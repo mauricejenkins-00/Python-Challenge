@@ -21,3 +21,26 @@ with open(budget_file) as budget_reader:
         profit.append(int(row[1]))
     for i in range(len(profit)-1):
         change_amount.append(profit[i+1]-profit[i])
+        
+#Evaluate the max and min from the list made
+increase = max(change_amount)
+decrease = min(change_amount)
+
+#Using the index, 
+monthly_increases = change_amount.index(max(change_amount))+1
+monthly_decreases = change_amount.index(min(change_amount))+1
+
+output = (
+   f"\n Financial Analysis \n"
+   f"------------------------------\n"
+   f"Total Months: {month_count}\n"
+   f"Total: ${profit}\n"
+   f"Average  Change: ${change_amount:}\n"
+   f"Greatest Increase in Profits: {monthly_increases[0]} (${monthly_increases[1]})\n"
+   f"Greatest Decrease in Profits: {monthly_decreases[0]} (${monthly_decreases[1]})\n")
+
+with open(budget_file, "w") as txt_file_output:
+   txt_file_output.write(output)  
+   txt_file_output
+
+
