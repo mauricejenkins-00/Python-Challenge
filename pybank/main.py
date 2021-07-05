@@ -15,3 +15,9 @@ with open(budget_file) as budget_reader:
     profit = []
     change_amount = []
    
+#Iterate through the values and add them to the empty list 
+    for row in budget_reader:
+        month_count.append(row[0])
+        profit.append(int(row[1]))
+    for i in range(len(profit)-1):
+        change_amount.append(profit[i+1]-profit[i])
