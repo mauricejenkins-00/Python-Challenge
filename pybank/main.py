@@ -9,4 +9,8 @@ with open(budget_file) as budget_reader:
     budget_reader = csv.reader(budget_file, delimiter = ',')
     header = next(budget_reader)
     print(f"{header}")
-#
+    
+#Create empty lists to add the csv values to 
+    month_count = []
+    profit = []
+    
