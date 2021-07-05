@@ -30,6 +30,7 @@ decrease = min(change_amount)
 monthly_increases = change_amount.index(max(change_amount))+1
 monthly_decreases = change_amount.index(min(change_amount))+1
 
+#Sets up a variable to hold the txt to be pushed into a new txt file 
 output = (
    f"\n Financial Analysis \n"
    f"------------------------------\n"
@@ -39,6 +40,7 @@ output = (
    f"Greatest Increase in Profits: {monthly_increases[0]} (${monthly_increases[1]})\n"
    f"Greatest Decrease in Profits: {monthly_decreases[0]} (${monthly_decreases[1]})\n")
 
+#Writes the txt to the new file from the variable input
 with open(budget_file, "w") as txt_file_output:
    txt_file_output.write(output)  
    txt_file_output
