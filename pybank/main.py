@@ -13,4 +13,5 @@ with open(budget_file) as budget_reader:
 #Create empty lists to add the csv values to 
     month_count = []
     profit = []
-    
+    change_amount = []
+   
