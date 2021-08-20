@@ -1,6 +1,6 @@
-# python-challenge
+Python Challenge
 
-## Background
+Background
 
 Well... you've made it!
 
@@ -8,7 +8,7 @@ It's time to put away the Excel sheet and join the big leagues. Welcome to the w
 
 Both of these challenges encompass a real-world situation where your newfound Python scripting skills can come in handy. These challenges are far from easy so expect some hard work ahead!
 
-## PyBank
+PyBank
 
 ![Revenue](Images/revenue-per-lead.png)
 
@@ -29,7 +29,7 @@ Both of these challenges encompass a real-world situation where your newfound Py
 * As an example, your analysis should look similar to the one below:
 
 
-## PyPoll
+PyPoll
 
 ![Vote Counting](Images/Vote_counting.png)
 
